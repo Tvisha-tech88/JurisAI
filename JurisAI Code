@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juris AI - Your AI-powered legal assistant for document analysis, case law research, and compliance assistance.">
+    <title>Juris AI - AI-Powered Legal Assistant</title>
+    
+    <!-- External Styles & Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">  <!-- Keep this for custom styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons (for social links, etc.) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* General Theme Styles */
+        body {
+            background-color: #1e3b5a;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #14283e;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        /* Hero Section */
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: #0d2538;
+            border: none;
+            transition: background 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #163f5e;
+        }
+
+        /* Social Icons */
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+
+        /* Dark Mode */
+        .dark-mode {
+            background-color: #ffffff;
+            color: #1e3b5a;
+        }
+        .dark-mode .navbar {
+            background-color: #e3e3e3;
+        }
+        .dark-mode .navbar-brand, 
+        .dark-mode .nav-link {
+            color: black !important;
+        }
+        .dark-mode .btn-primary {
+            background-color: #0056b3;
+        }
+        .dark-mode .btn-primary:hover {
+            background-color: #003f80;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">JurisAI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#lexora">Lexora Chatbot</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        
+                        <!-- Button Links -->
+                        <li class="nav-item"><a class="nav-link btn btn-outline-light ms-2" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-primary ms-2" href="signup.html">Sign Up</a></li>
+
+                        <!-- Dark Mode Toggle -->
+                        <li class="nav-item">
+                            <button id="theme-toggle" class="btn btn-outline-light ms-2">Toggle Mode</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero py-5">
+            <div class="container">
+                <h1>Justice Meets AI - Smart. Fast. Reliable.</h1>
+                <p>Your AI-powered legal assistant for document analysis, case law research, and compliance assistance.</p>
+                <a href="#features" class="btn btn-primary">Explore Features</a>
+            </div>
+        </section>
+        
+        <!-- Features Section -->
+        <section id="features" class="features py-5">
+            <div class="container">
+                <h2>Why Choose Juris AI?</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>📄 AI-Powered Document Analysis</h4>
+                        <p>Upload contracts and legal documents for instant summaries and key insights.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>⚖️ Legal Research & Case Law</h4>
+                        <p>Find relevant case laws and legal precedents with ease.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>🤖 Smart Chatbot - Lexora</h4>
+                        <p>Get instant AI-driven legal guidance from our chatbot Lexora.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Lexora Chatbot Section -->
+        <section id="lexora" class="lexora py-5">
+            <div class="container">
+                <h2>Meet Lexora - Your AI Legal Assistant</h2>
+                <p>Ask Lexora legal questions and receive AI-powered insights in seconds.</p>
+                <a href="https://chat.cxgenie.ai?aid=73a871cb-4383-42b0-9eee-ea762173fc7e&lang=en" class="btn btn-primary">Chat with Lexora</a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Juris AI. All rights reserved.</p>
+            <div class="d-flex justify-content-center gap-3 social-icons">
+                <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Dark Mode Toggle
+        const toggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+        
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+        });
+
+        // Load user preference
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+        }
+    </script>
+</body>
+</html>
